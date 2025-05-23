@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="lib/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>DrAgri System</title>
+</head>
+
+<body style="background-color: #E9F7EF">
+  <!-- NavBar -->
+  <nav id="navmenu" class="navbar navbar-expand-lg sticky-top">
+    <a class="navbar-brand" href="#home">
+      <img src="Images/logo/DrAgrilogo.png" width="50" height="50" class="d-inline-block align-top" loading="lazy">
+      <span>Smart DrAgri System</span></br>
+    </a>
+    <button id="nav-toggle" class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span id="nav-toggle-icon" class="fas fa-ellipsis-v"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul id="navmenu-links" class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Project Scope
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#project-scope">Literature Survey</a>
+            <a class="dropdown-item" href="#research_gap">Research Gap</a>
+            <a class="dropdown-item" href="#research_problem">Research Problem & Solution</a>
+            <a class="dropdown-item" href="#research_objectives">Research Objectives</a>
+            <a class="dropdown-item" href="#methodology">Methodology</a>
+            <a class="dropdown-item" href="#tech_used">Technologies</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#milestones">Milestones</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Downloads
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#downloads">Documents</a>
+            <a class="dropdown-item" href="#presentations">Presentations</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Us</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#achievements">Achievements</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Home -->
+  <section id="home">
+    <div class="container">
+      <div class="hero-cta">
+          <h1>
+              Enhancing Agriculture with Smart Drones for Surveillance, Crop Monitoring, and Pesticide
+              Spraying
+          </h1>
+        <a class="btn btn-outline-light" type="button" href="#project-scope"><span class="btn-text">Learn
+            More</span><span class="fas fa-chevron-right btn-icon"></span></a>
+      </div>
+    </div>
+    <div class="hero-cover">
+      <img class="hero-image" src="Images/other/DrAgri1 Back.jpg" />
+    </div>
+  </section>
+  <!-- project-scope -->
+  <section id="project-scope" class="main-sections" style="background-color:#FDFEFE">
+    <div class="container">
+      <h5 class="section-headings">Project Scope</h5>
+      <!-- Literature Survey -->
+      <div id="literature" class="sub-section">
+        <h2>Literature Survey</h2>
+        <div class="row">
+          <div id="project-scope-left" class="col-md-6 col-sm-12 pt-lg-5">
+            <div class="section-left">
+              <div class="section-info-div">
+                <div class="row">
+                  <div class="col-sm-5"><img src="Images/lit/Lit.jpg" width="80%" /></div>
+                  <div class="col-sm-7 text-col">
+                      According to the FAO, over 40% of global crops are lost annually due to pests and diseases — highlighting the urgent need for real-time agricultural monitoring and precision intervention. 
+                  </div>
+                </div>
+              </div>
+              <div class="section-figure ">
+                <img style="align-items:center" src="Images/lit/graph.jpeg" width="80%" />
+                <p class="Fig01">Figure 1. Anxiety and Depression Statistics during COVID-19 [2]</p>
+              </div>
+              <div class="section-figure ">
+                <img style="align-items:center" src="Images/lit/ss.jpg" width="80%" />
+                <p class="Fig01">Figure 2. Expenditure VS Population with Mental Illnesses [12]</p>
+              </div>
+            </div>
+          </div>
+          <div id="project-scope-right" class="col-md-6 col-sm-12 pt-lg-5 justify-text">
+              <p>The evolution of agriculture has seen a significant shift from traditional labor-intensive methods to precision farming powered by modern technologies. Researchers have extensively studied the use of drones for crop monitoring, aerial imaging, and disease detection. Studies highlight how drones equipped with multispectral cameras and advanced navigation algorithms enable efficient, autonomous field coverage while providing high-resolution data for assessing crop health. Similarly, the integration of machine learning for plant disease identification through image processing has gained momentum, allowing early intervention and improved yield protection.</p>
+              <p>In parallel, IoT-based soil monitoring systems have been explored in various agricultural research works. Deploying ground sensors for real-time data collection on nutrient levels (NPK), temperature, and humidity helps farmers make informed decisions on irrigation and fertilization. Communication technologies like LoRa have been identified as optimal for long-range, low-power data transmission in rural environments. Cloud platforms like Firebase are commonly used for real-time data storage and visualization. While these systems provide valuable insights, they often operate in isolation from aerial surveillance or automated response mechanisms.</p>
+              <p>Despite the promising advancements in drone and IoT technologies, the literature reveals a gap in fully integrated, automated systems that combine aerial monitoring, soil sensing, targeted spraying, and secure communication within a single solution. Most existing implementations focus on one element, either drone imaging, IoT sensing, or spraying, without end-to-end coordination.  </p>
+              <p>Moreover, concerns about communication reliability, system scalability, and data security remain under-addressed. The Smart Dragri System fills this gap by offering a unified platform that integrates drone navigation, disease detection, IoT-based soil monitoring, automated pesticide application, and secure dashboard communication, paving the way for a more sustainable and intelligent agricultural future.</p>
+            <div class="references">
+              <p class="pt-sm-1"><strong>References</strong></p>
+              <ol>
+                  <li>A. Koubaa, A. Qureshi, Y. Javed, and M. Sriti, "A Comparative Study of Path Planning Algorithms for Autonomous Mobile Robots in Complex Environments," Journal of Control Science and Engineering, vol. 2016, Article ID 2036782, 2016.</li>
+                  <li>
+                      RX. Zhang, J. Liu, and H. Li, "Real-time obstacle detection and avoidance for unmanned aerial vehicles using LiDAR and computer vision," Sensors, vol. 17, no. 8, p. 1892, Aug. 2017.
+                  </li>
+                  <li>B. Chen, C. Jiang, and Z. Zhang, "Integration of GPS and IMU sensors for real-time obstacle detection in agricultural drones," IEEE Transactions on Instrumentation and Measurement, vol. 68, no. 12, pp. 4657-4666, Dec. 2019.</li>
+                  <li>
+                      S. Mohammed, A. O. Oluwarotimi, and E. Abdullah, "Enhancing crop disease detection accuracy using machine learning algorithms with drone data," Computers and Electronics in Agriculture, vol. 176, p. 105678, Apr. 2021.
+                  </li>
+                  <li>
+                      M. Farsi, N. Petrova, and P. D. Ruiu, "LoRa for agriculture: Long-range wireless communication for monitoring systems," IEEE Internet of Things Journal, vol. 6, no. 4, pp. 6167-6178, Aug. 2019.
+                  </li>
+                  <li>
+                      R. Singh and R. Sharma, "AES-128 encryption for secure data communication in agricultural drone networks," International Journal of Advanced Computer Science and Applications, vol. 11, no. 9, pp. 413-418, 2020.
+                  </li>
+                  <li>
+                      T. Jones, J. Brown, and M. Miller, "Combining simulated models with physical components for accurate drone navigation in agriculture," IEEE Transactions on Automation Science and Engineering, vol. 15, no. 3, pp. 1104-1114, July 2018.
+                  </li>
+                  <li>
+                      S. Das, R. Kumar, and A. Maiti, "Utilizing Raspberry Pi for real-time data processing in agricultural drones," IEEE Embedded Systems Letters, vol. 11, no. 1, pp. 7-10, Mar. 2019.
+                  </li>
+                  <li>
+                      F. S. G. C. A. R. D. F. Victor Delafontaine, "Drone-aided Localization in LoRa IoT Networks," IEEE xplore, pp. 1-7, 2020 .
+                  </li>
+                  <li>
+                      M. I. H. A. R. M. Z. A. R. A. NAFEES MANSOOR, "A Fresh Look at Routing Protocols in Unmanned Aerial Vehicular Networks: A Survey," IEEE Access Survey, pp. 1-20, 2023.
+                  </li>
+                  <li>
+                      S. M. REZOAN AHMED NAZIB, "A Survey Routing Protocols for Unmanned Aerial VehicleAided Vehicular Ad Hoc Networks," IEEE Aceess, pp. 1-26, 2020.
+                  </li>
+                  <li>
+                      K. T. W. R. MOHAMAD HAZWAN MOHD GHAZALI, "Real-Time Deployments of UAVBased LoRa communication Network," IEEE access Collaborative Research in Engineering, Science, and Technology, pp. 1-14, 2021.
+                  </li>
+                  <li>R. M. F. E. A. G. F. S. G. Sami Touil, " smart irrigation management strategies and their effect in crop field," Wiley online library journal, p. 21, 2022.  </li>
+                  <li>S. P. V. P. Nirav Rathod, "IOT Based Smart Sensor Agriculture Stick for Live Temperature and Humidity," International Journal of Engineering Research & Technology, pp. 1-6, 2020 july.  </li>
+                  <li>S. G. A. Sivasankari, "Wireless sensors based crop monitoring system for agricuture," International Journal of Computer Science and Information Technology , p. 11, 2014 .  </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Research Gap -->
+      <div id="research_gap" class="sub-section">
+        <h2>Research Gap</h2>
+        <p>Following areas are the research gaps found in most of the recent researches.</p>
+        <div class="row mt-5 research-gap">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="fa-container text-center">
+                  <i class="fas fa-plane fa-3x" aria-hidden="true" style="color: green; "></i>
+                </div>
+                <div class="text-center" style="padding-top: 20px;">
+                    <h5>Autonomous Drone Navigation</h5>
+                </div>
+                <div>
+                    <p style="text-align: justify;">Most studies in precision agriculture utilize drones for imaging and mapping, but lack adaptive, real-time path-planning algorithms that can handle complex, obstacle-filled field environments. Existing solutions typically follow static flight paths, resulting in incomplete crop coverage and inefficient energy use. Additionally, these systems often require manual control or frequent operator input. The Smart Dragri System overcomes this by simulating intelligent drone navigation using the A* algorithm, capable of dynamic re-routing and full field coverage without human intervention.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="fa-container text-center">
+                  <i class="fas fa-solid fas fa-chart-line fa-3x " aria-hidden="true" style="color: green;"></i>
+                </div>
+                <div class="text-center" style="padding-top: 20px;">
+                    <h5>IoT-Based Soil & Disease Monitoring</h5>
+                </div>
+                <div>
+                    <p style="text-align: justify;">While IoT applications in agriculture have shown promise, many implementations focus solely on individual parameters like soil moisture or temperature. There remains a gap in the use of low-cost, multi-sensor IoT systems that provide real-time soil nutrition (NPK) monitoring and disease feedback integrated with aerial imaging. Furthermore, most research lacks seamless data synchronization with cloud platforms, and fails to operate efficiently in connectivity-poor regions. Our system addresses this by using LoRa-based communication and cloud integration, ensuring reliable, real-time field data access. </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="fa-container text-center">
+                  <i class="fas fa-spray-can fa-3x " aria-hidden="true" style="color: green;"></i>
+                </div>
+                <div class="text-center" style="padding-top: 20px;">
+                    <h5>Automation, Precision Spraying & Security</h5>
+                </div>
+                <div>
+                    <p style="text-align: justify;">
+                        Although some work has been done on automated pesticide spraying, current solutions are rarely connected to real-time disease maps or prior spraying data. They tend to spray uniformly, wasting chemicals and increasing cost. Additionally, many systems lack memory-aware spraying logic and secure communication protocols. There’s a notable research gap in combining automation with data security in smart farming. The Smart Dragri System integrates AES-128 encryption with a memory-based spray controller, ensuring safe, targeted pesticide application only where it's needed.
+                    </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Research Problem -->
+      <div id="research_problem" class="sub-section">
+        <h2>Research Problem & Solution</h2>
+        <div class="row">
+          <div id="project-scope-left" class="col-md-6 col-sm-12 pt-lg-5 justify-text">
+            <h5><strong>Proposed Problem</strong></h5>
+            </br>
+            <h4 class="highlight">How can farmers monitor large-scale crop fields in real time, detect diseases early, and apply pesticides efficiently using an integrated and automated system without relying on manual labor or constant internet connectivity ?</h4>
+            <p></p>
+            <p style="text-align: justify;">Agricultural productivity continues to be impacted by delayed disease detection, inefficient pesticide use, and limited access to real-time field data. Farmers often rely on manual field inspections, leading to late interventions and overuse of chemicals, which increases cost and environmental harm. Moreover, existing smart agriculture solutions are often fragmented drones, IoT sensors, and spraying systems work independently, lacking synchronization. In rural regions, poor internet infrastructure further hampers the adoption of smart farming technologies. These challenges highlight the need for a unified, intelligent system that can automate, analyze, and act in real time without relying heavily on human input or high-speed connectivity.</p>
+            </br>
+          </div>
+
+          <div id="project-scope-right" class="col-md-6 col-sm-12 pt-lg-5">
+            <div class="section-left">
+              <div>
+                <h5><strong>Proposed Solution</strong></h5>
+                </br>
+                <p style="text-align: justify;">
+                    The Smart Dragri System solves this problem by combining autonomous drones, IoT soil sensors, precision spraying, and secure communication into one unified platform. The system uses path-planning algorithms for drone navigation, image processing for disease detection, real-time soil monitoring via NPK sensors, and LoRa communication for long-range, offline-capable data transfer. This enables farmers to make informed decisions, reduce pesticide usage, and improve crop health all with minimal manual effort and scalable for any farm size.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- <div>
+          <h5><strong>Proposed Solution</strong></h5>
+          </br>
+          <p style="text-align: justify;">The "Serenity" mobile application incorporates multiple elements to improve emotional well-being. It assesses stress levels through chat interactions, utilizing Natural Language Processing (NLP) with a Sequential neural network for sentiment analysis. Stress level prediction is carried out through a Multi-Layer Perceptron (MLP) classifier. Additionally, the self-reflection and journaling feature employs NLP to predict emotions from text using Logistic Regression, subsequently suggesting mood-enhancing activities through content-based filtering. The application also makes use of Convolutional Neural Networks (CNN) with transfer learning for facial emotion recognition and provides video recommendations tailored to the user's emotions through content-based filtering. To add a personal touch, Generative Adversarial Networks (GAN) generate personalized visual content. Collectively, these diverse features offer users a comprehensive tool for managing stress and improving emotional well-being.
+
+          </P>
+        </div> -->
+      </div>
+      <!-- Research Objectives -->
+      <div id="research_objectives" class="sub-section">
+        <div class="container">
+          <h2 class="pb-5 pt-5 text-center mb-5 display-5">Research Objectives</h2>
+          <!-- First Content Section-->
+          <div class="row align-items-center connecting-lines d-flex">
+            <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
+              <!-- <div class="circle font-weight-bold"><i class="fa fa-star"></i></div> -->
+            </div>
+            <div class="col-6">
+                <h4>Smart Drone Navigation & Crop Disease Detection</h4>
+                <p style="text-align: justify;">The first objective is to simulate an autonomous drone equipped with intelligent path-planning algorithms to efficiently navigate agricultural fields. This drone is designed to dynamically avoid obstacles while capturing aerial images of crops. Through onboard image processing, the drone identifies signs of disease and maps their GPS coordinates. This enables early detection and reduces the need for manual inspections, leading to faster response and minimized crop loss.</p>
+            </div>
+          </div>
+          <!-- Path Line -->
+          <div class="row timeline_s">
+            <div class="col-2">
+              <div class="corner top-right"></div>
+            </div>
+            <div class="col-8">
+              <hr />
+            </div>
+            <div class="col-2">
+              <div class="corner left-bottom"></div>
+            </div>
+          </div>
+          <!-- Second Content Section-->
+          <div class="row align-items-center justify-content-end connecting-lines d-flex">
+            <div class="col-6 text-right">
+                <h4>IoT-Based Soil Monitoring & Data Communication</h4>
+                <p style="text-align: justify;">
+                    The second objective is to implement an IoT-driven ground network using NPK sensors to monitor soil nutrient levels in real time. These sensors are connected to low-power microcontrollers and transmit data via LoRa technology to a centralized Firebase cloud. This setup ensures that farmers receive timely updates on soil health and environmental conditions, even in low-connectivity rural areas. The data supports informed decisions on fertilization and irrigation.
+                </p>
+            </div>
+            <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+              <!-- <div class="circle font-weight-bold"><i class="fa fa-star"></i></div> -->
+            </div>
+          </div>
+          <!-- Path Line -->
+          <div class="row timeline_s">
+            <div class="col-2">
+              <div class="corner right-bottom"></div>
+            </div>
+            <div class="col-8">
+              <hr />
+            </div>
+            <div class="col-2">
+              <div class="corner top-left"></div>
+            </div>
+          </div>
+          <!-- Third Content Section -->
+          <div class="row align-items-center connecting-lines d-flex">
+            <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+              <!-- <div class="circle font-weight-bold"><i class="fa fa-star"></i></div> -->
+            </div>
+            <div class="col-6">
+                <h4>Automated Pesticide Spraying</h4>
+                <p style="text-align: justify;">
+                    The third objective is to automate pesticide and fertilizer spraying based on real-time disease detection data. A smart spraying drone uses the GPS coordinates provided by the monitoring drone to apply treatments precisely to affected areas. A memory-based control mechanism ensures that already-treated zones are not revisited, reducing chemical waste, lowering costs, and promoting sustainable farming practices.
+                </p>
+            </div>
+          </div>
+          <!-- Path Line -->
+
+          <div class="row timeline_s">
+            <div class="col-2">
+              <div class="corner top-right"></div>
+            </div>
+            <div class="col-8">
+              <hr />
+            </div>
+            <div class="col-2">
+              <div class="corner left-bottom"></div>
+            </div>
+          </div>
+          <!-- Second Content Section-->
+          <div class="row align-items-center justify-content-end connecting-lines d-flex">
+            <div class="col-6 text-right">
+                <h4>Monitoring Dashboard & Data Security</h4>
+                <p style="text-align: justify;">The fourth objective is to design a user-friendly dashboard and mobile application that visualizes all collected data including drone paths, soil status, and spraying activity. This interface empowers farmers with actionable insights in real time. To ensure data integrity and user privacy, all communication between system components is secured using AES-128 encryption, establishing a safe and transparent digital farming environment. </p>
+            </div>
+            <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+              <!-- <div class="circle font-weight-bold"><i class="fa fa-star"></i></div> -->
+            </div>
+          </div>
+          <!-- Path Line -->
+          <div class="row timeline_s">
+            <div class="col-2">
+              <div class="corner right-bottom"></div>
+            </div>
+            <div class="col-8">
+              <hr />
+            </div>
+            <div class="col-2">
+              <div class="corner top-left"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Methodology -->
+      <div id="methodology" class="sub-section">
+        <h2>Methodology</h2>
+        <div class="row">
+          <div id="project-scope-left" class="col-md-6 col-sm-12 pt-lg-5">
+            <div class="section-left">
+              <div class="section-figure">
+                <img src="Images/other/Higharc.jpg" width="100%" height="100%" />
+                <p class="fig2">Figure 3. High Level Architecture of the Dragri System.</p>
+              </div>
+            </div>
+          </div>
+          <div id="project-scope-right" class="col-md-6 col-sm-12 pt-lg-5 justify-text">
+              <p>The proposed Smart Dragri System is composed of four major components working in an integrated manner to automate agricultural monitoring, disease detection, pesticide application, and secure communication. These four core components are:</p>
+            <ol>
+              <li><strong>Autonomous Drone Navigation and Crop Disease Detection.</strong></li>
+              <li><strong>IoT-Based Soil Monitoring and Real-Time Communication.</strong></li>
+              <li><strong>Automated Precision Pesticide Spraying.</strong></li>
+              <li><strong>Cloud-Based Dashboard and Encrypted Monitoring System.</strong></li>
+            </ol>
+            <p> The Smart Dragri System is built as a modular, automated platform integrating drone simulation, IoT-based soil monitoring, precision pesticide spraying, and real-time secure communication. The drone, developed using Python and the A* path-planning algorithm, autonomously navigates agricultural fields while avoiding obstacles and capturing images. Using basic image processing, it detects crop diseases and maps affected areas with simulated GPS coordinates. Meanwhile, soil health is monitored using Raspberry Pi and NPK sensors, which transmit real-time data to a Firebase cloud database via LoRa communication ideal for long-range, low-power use in rural farms. </p>
+            <p>Once disease locations are identified, an automated spray drone receives the GPS data and applies pesticides only where necessary using a memory-based mapping system to avoid redundant spraying. Farmers access a web or mobile dashboard that visualizes drone activity, soil conditions, and treatment zones in real time. The entire system is secured with AES-128 encryption, ensuring reliable and private communication between components. All operations are managed through a centralized Flask-based backend, enabling the coordination of drone navigation, data collection, spraying actions, and dashboard updates delivering an efficient, scalable, and smart agriculture solution. </p>
+          </div>
+        </div>
+      </div>
+      <!-- Technologies -->
+      <div id="tech_used" class="sub-section">
+        <h2>Technologies Used</h2>
+        <div class="row technology mt-5">
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="Images/tech/TensorFlow.png" alt="TensorFlow" width="80" height="80">
+            </div>
+            <p>TensorFlow</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="Images/tech/OpenCV.png" alt="OpenCV" >
+            </div>
+            <p>OpenCV</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="Images/tech/lora.png" alt="lora" width="80" height="80">
+            </div>
+            <p>LoRa</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="Images/tech/firebase.png" alt="firebase">
+            </div>
+            <p>Firebase</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="Images/tech/AES256.png" alt="AES256" width="100" height="100">
+            </div>
+            <p>AES-256</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="Images/tech/arduino.png" alt="arduino">
+            </div>
+            <p>Arduino</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="Images/tech/java.png" alt="java" width="100" height="100">
+            </div>
+            <p>Java</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="Images/tech/c++.png" alt="c++" width="100" height="100">
+            </div>
+            <p>C++</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="Images/tech/matplotlib.png" alt="matplotlib" width="100" height="100">
+            </div>
+            <p>Matplotlib</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="Images/tech/rassberrypi.png" alt="RassberryPI" width="100" height="100">
+            </div>
+            <p>RassberryPI</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="Images/tech/react.png" alt="react">
+            </div>
+            <p>React</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+              <div class="avatar">
+                  <img src="Images/tech/vscode.png" alt="VScode">
+              </div>
+              <p>VScode</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+              <div class="avatar">
+                  <img src="Images/tech/python.png" alt="python">
+              </div>
+              <p>Python</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+              <div class="avatar">
+                  <img src="Images/tech/Windows.png" alt="Windows">
+              </div>
+              <p>Windows</p>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Milestones -->
+  <section id="milestones" class="main-sections">
+    <div class="container">
+      <h5 class="section-headings">Milestones</h5>
+      <div class="sub-section">
+        <h2>Timeline in Brief</h2>
+        <div class="milestones">
+          <ul class="timeline">
+            <!-- Project Proposal -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">July & August 2024</p>
+                <h3>Project Proposal & Reports</h3>
+                <p>A Project Proposal and Reports are presented to potential sponsors or clients to receive funding or get your
+                  project approved.</p>
+                <p><strong>Marks Allocated : </strong>12</p>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 6%" aria-valuenow="12"
+                    aria-valuemin="0" aria-valuemax="100">12%</div>
+                </div>
+              </div>
+            </li>
+            <!-- Progress Presentation I -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">December 2024</p>
+                <h3>Progress Presentation I</h3>
+                <p>Progress Presentation I reviews the 50% completetion status of the project. This reveals any gaps or
+                  inconsistencies in the design/requirements.</p>
+                <p><strong>Marks Allocated : </strong>15</p>
+                <div class="progress">
+                  <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 12%" aria-valuenow="13"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 6%" aria-valuenow="15"
+                    aria-valuemin="0" aria-valuemax="100">15%</div>
+                </div>
+              </div>
+            </li>
+            <!-- Research Paper -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">August 2023</p>
+                <h3>Research Paper</h3>
+                <p>Describes what you contribute to existing knowledge, giving due recognition to all work that you
+                  referred in making new knowledge</p>
+                <p><strong>Marks Allocated : </strong>10</p>
+                <div class="progress">
+                  <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 27%" aria-valuenow="27"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10"
+                    aria-valuemin="0" aria-valuemax="100">10%</div>
+                </div>
+              </div>
+            </li>
+            <!-- Progress Presentation II -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">September 2023</p>
+                <h3>Progress Presentation II</h3>
+                <p>Progress Presentation II reviews the 90% completetion status demonstration of the project. Along with
+                  a Poster presesntation which describes the project as a whole.</p>
+                <p><strong>Marks Allocated : </strong>18</p>
+                <div class="progress">
+                  <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 37%" aria-valuenow="37"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 18%" aria-valuenow="18"
+                    aria-valuemin="0" aria-valuemax="100">18%</div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Logbook -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">October 2023</p>
+                <h3>Logbook</h3>
+                <p>Status of the project is validated through the Logbook. This also includes, Checklist document 1 & 2.
+                </p>
+                <p><strong>Marks Allocated : </strong>4</p>
+                <div class="progress">
+                  <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 57%" aria-valuenow="57"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 3%" aria-valuenow="4"
+                    aria-valuemin="0" aria-valuemax="100">4%</div>
+                </div>
+              </div>
+            </li>
+            <!-- Final Report -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">October 2023</p>
+                <h3>Final Report</h3>
+                <p>Final Report evalutes the completed project done throughout the year. Marks mentioned below includes
+                  marks for Individual & group reports and also Final report.</p>
+                <p><strong>Marks Allocated : </strong>19</p>
+                <div class="progress">
+                  <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 61%" aria-valuenow="61"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 19%" aria-valuenow="29"
+                    aria-valuemin="0" aria-valuemax="100">19%</div>
+                </div>
+              </div>
+            </li>
+            <!-- Viva -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">October 2023</p>
+                <h3>Final Presentation & Viva</h3>
+                <p>Viva is held individually to assess each members contribution to the project.</p>
+                <p><strong>Marks Allocated : </strong>20</p>
+                <div class="progress">
+                  <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 90%" aria-valuenow="90"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="10"
+                    aria-valuemin="0" aria-valuemax="100">10%</div>
+                </div>
+              </div>
+            </li>
+            <!-- Website -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">November 2023</p>
+                <h3>Website Assessment</h3>
+                <p>The Website helps to promote our research project and reveals all details related to the project.</p>
+                <p><strong>Marks Allocated : </strong>2</p>
+                <div class="progress">
+                  <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 55%" aria-valuenow="55"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 2%" aria-valuenow="2"
+                    aria-valuemin="0" aria-valuemax="100">2%</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Downloads -->
+  <section id="downloads" class="main-sections">
+    <div class="container">
+      <h5 class="section-headings">Downloads</h5>
+      <!-- Documents -->
+      <div class="sub-section">
+        <h2>Documents</h2>
+        <p>Please find all documents related to this project below.</p>
+        <div class="row mt-sm-5 downloads-container">
+          <!-- Topic Assessment -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-file-pdf mr-2 download-pdf"></i>Topic Assessment</h5>
+                <p class="card-text pt-sm-2">Submitted on 2024/05/13</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://drive.google.com/file/d/1fytish2I4BnoBZYwrhstSmMgQvMMsZ0T/view?usp=sharing"
+                    target="_blank">View</a></li>
+              </ul>
+
+            </div>
+          </div>
+          <!-- Project Proposal -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-file-pdf mr-2 download-pdf"></i>Project Proposal</h5>
+                <p class="card-text pt-sm-2">Submitted on 2024/08/24</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Individual<a
+                    href="https://drive.google.com/drive/folders/1W0x9gg22jxk4QQq-vK6cNeOSBEvDVGRW?usp=sharing"
+                    target="_blank">View</a></li>
+              </ul>
+
+            </div>
+          </div>
+          <!-- Checklist Document I -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-file-pdf mr-2 download-pdf"></i>Checklist Documents I</h5>
+                <p class="card-text pt-sm-2">Submitted on 2024/12/08</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Individual<a
+                    href="https://drive.google.com/drive/folders/1wcxZPENPoRY_6GdIZEDqBL_AuKsgnXpv?usp=sharing"
+                    target="_blank">View</a></li>
+              </ul>
+
+            </div>
+          </div>
+          <!-- Checklist Document II -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-file-pdf mr-2 download-pdf"></i>Checklist Document II</h5>
+                <p class="card-text pt-sm-2">Submitted on 2025/03/20</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://drive.google.com/file/d/1htUjfIt2r__Frw6X4BnBXNBBFVoUIIm6/view?usp=sharing"
+                    target="_blank">View</a></li>
+              </ul>
+
+            </div>
+          </div>
+          <!-- Research -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-file-pdf mr-2 download-pdf"></i>Research Paper</h5>
+                <p class="card-text pt-sm-2">Submitted on 2025/03/11</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://drive.google.com/file/d/153APbIij9m05O4IxmojF-8LRI1F1THdI/view?usp=sharing"
+                    target="_blank">View</a></li>
+              </ul>
+
+            </div>
+          </div>
+          <!-- Final Report -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-file-pdf mr-2 download-pdf"></i>Final Report</h5>
+                <p class="card-text pt-sm-2">Submitted on 2025/04/11</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://drive.google.com/file/d/1oI0DqsH4igKaE55o_zU58s13zd6vB8yH/view?usp=sharing"
+                    target="_blank">View</a></li>
+                <li class="list-group-item">Individual<a
+                    href="https://drive.google.com/drive/folders/1R8qdhUbx0nxWOPWWiMSvI5EFU-_uKo2z?usp=sharing"
+                    target="_blank">View</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Presentations -->
+      <div id="presentations" class="sub-section">
+        <h2>Presentations</h2>
+        <p>Please find all presentations related this project below.</p>
+        <div class="row mt-sm-5 downloads-container">
+          <!-- Project Proposal -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-file-powerpoint mr-2 download-powerpoint"></i></i>Project
+                  Proposal</h5>
+                <p class="card-text pt-sm-2">Submitted on 2024/08/18</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://drive.google.com/file/d/1azH3X7KfeWwJ6UfzlcnHR_v4eReRY7sl/view?usp=sharing"
+                    target="_blank">View</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Progress Presentation I -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-file-powerpoint mr-2 download-powerpoint"></i></i>Progress
+                  Presentation I</h5>
+                <p class="card-text pt-sm-2">Submitted on 2024/12/05</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://drive.google.com/file/d/1xNzcIOlS7A5bEn_k_nAcquA1H2VNHUsP/view?usp=sharing"
+                    target="_blank">View</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Progress Presentation II -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-file-powerpoint mr-2 download-powerpoint"></i></i>Progress
+                  Presentation II</h5>
+                <p class="card-text pt-sm-2">Submitted on 2025/03/18</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://drive.google.com/file/d/1yKsP2N_5K0TyGsi1NYahKagZC2Sl2oIU/view?usp=sharing"
+                    target="_blank">View</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Final Presentation -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-file-powerpoint mr-2 download-powerpoint"></i></i>Final
+                  Presentation</h5>
+                <p class="card-text pt-sm-2">Submitted on 2025/05/28</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://drive.google.com/drive/folders/15PPytZC5N1kizHWa3IZB__eZttUp7aYA?usp=sharing"
+                    target="_blank">View</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sub-section">
+        <h2>Commercialization</h2>
+        <div class="mt-sm-5 mb-5">
+          <center>
+            <video height="100%" , width="100%" controls poster="./Images/other/bannernew.jpg">
+              <source src="./promotional/appVid.mp4" type="video/mp4">
+              
+            </video>
+          </center>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Us -->
+  <section id="about" class="main-sections " style="background-color:#FDFEFE">
+    <div class="container">
+      <h5 class="section-headings">About Us</h5>
+      <div class="sub-section about-us-container ">
+        <h2>Meet Our Team !</h2>
+        <div class="row mt-sm-5">
+          <!-- Supervisor -->
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card about-us-card supervisor-card h-100">
+              <img src="Images/dp/Supervisor.jpg" class="about-us-image" alt="Prof. Anuradha Jayakody" />
+              <div class="card-body">
+                <h5 class="card-title">Prof. Anuradha Jayakody</h5>
+                <span class="badge badge-secondary">Supervisor</span>
+                <div class="text-group">
+                  <p>Sri Lanka Institute of Information Technology</p>
+                  <p><strong>Department</strong></p>
+                  <p>Head | Department of Computer Systems Engineering</p>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="mailto:anuradha.j@sliit.lk"><i class="fas fa-envelope-open-text mr-2"></i>E-Mail</a>
+                  <a href="tel:+94714900228"><i class="fas fa-phone-alt mr-2"></i>+94 71 490 0228</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Co-Supervisor -->
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card about-us-card supervisor-card h-100">
+              <img src="Images/dp/Co-Supervisor.jpg" class="about-us-image" alt="Ms. Narmada Gamage" />
+              <div class="card-body">
+                <h5 class="card-title">Ms. Narmada Gamage</h5>
+                <span class="badge badge-secondary">Co-Supervisor</span>
+                <div class="text-group">
+                  <p>Sri Lanka Institute of Information Technology</p>
+                  <p><strong>Department</strong></p>
+                  <p>Lecturer | Department of Computer Systems Engineering</p>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="mailto:narmada.g@sliit.lk"><i class="fas fa-envelope-open-text mr-2"></i>E-Mail</a>
+                  <a href="tel:+94717404036"><i class="fas fa-phone-alt mr-2"></i>+94 71 740 4036</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        <div class="row mt-5">
+          <!-- Shehan -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card about-us-card h-100">
+              <img src="Images/dp/Shehan.jpg" class="about-us-image" alt="Shehan Wickramaarachchi" />
+              <div class="card-body">
+                <h5 class="card-title">Shehan Wickramaarachchi</h5>
+                <span class="badge badge-secondary">Group Leader</span>
+                <div class="text-group">
+                  <p><strong>Undergraduate</strong></p>
+                  <p>Sri Lanka Institute of Information Technology</p>
+                  <p><strong>Department</strong></p>
+                  <p>Computer Systems & Network Engineering</p>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="mailto:it21293344@my.sliit.lk"><i class="fas fa-envelope-open-text mr-2"></i>E-Mail</a>
+                  <a href="tel:+94741949913"><i class="fas fa-phone-alt mr-2"></i>+94 74 194 9913</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Praveen -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card about-us-card h-100">
+              <img src="Images/dp/Praveen.jpg" class="about-us-image" alt="Praveen Dissanayake" />
+              <div class="card-body">
+                <h5 class="card-title">Praveen<br />Dissanayake</h5>
+                <span class="badge badge-secondary">Group Member</span>
+                <div class="text-group">
+                  <p><strong>Undergraduate</strong></p>
+                  <p>Sri Lanka Institute of Information Technology</p>
+                  <p><strong>Department</strong></p>
+                  <p>Computer Systems & Network Engineering</p>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="mailto:it21352430@my.sliit.lk"><i class="fas fa-envelope-open-text mr-2"></i>E-Mail</a>
+                  <a href="tel:+94778032417"><i class="fas fa-phone-alt mr-2"></i>+94 77 803 2417</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Visal -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card about-us-card h-100">
+              <img src="Images/dp/Visal.jpg" class="about-us-image" alt="Visal Ekanayake" />
+              <div class="card-body">
+                <h5 class="card-title">Visal<br />Ekanayake</h5>
+                <span class="badge badge-secondary">Group Member</span>
+                <div class="text-group">
+                  <p><strong>Undergraduate</strong></p>
+                  <p>Sri Lanka Institute of Information Technology</p>
+                  <p><strong>Department</strong></p>
+                  <p>Computer Systems & Network Engineering</p>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="mailto:it21360664@my.sliit.lk"><i class="fas fa-envelope-open-text mr-2"></i>E-Mail</a>
+                  <a href="tel:+94778032417"><i class="fas fa-phone-alt mr-2"></i>+94 72 494 9799</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        
+          <!-- Madusha -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card about-us-card">
+              <img src="Images/dp/Madusha.jpg" class="about-us-image" alt="Madusha De Silva"
+                style="width: 100%; min-height: 40%; max-height: 40%;" />
+              <div class="card-body">
+                <h5 class="card-title">Madusha <br />De Silva</h5>
+                </br>
+                <span class="badge badge-secondary">Group Member</span>
+                <div class="text-group">
+                  <p><strong>Undergraduate</strong></p>
+                  <p>Sri Lanka Institute of Information Technology</p>
+                </div>
+                <div class="text-group">
+                  <p><strong>Department</strong></p>
+                  <p>Computer Systems & Network Engineering</p>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="mailto:it21232268@my.sliit.lk"><i class="fas fa-envelope-open-text mr-2"></i>E-Mail</a>
+                  <a href="tel:+94778032417"><i class="fas fa-phone-alt mr-2"></i>+94 70 577 5687</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us -->
+  <section id="contact" class="main-sections" style="background-color:#FDFEFE">
+    <div class="container">
+      <h5 class="section-headings">Contact Us</h5>
+      <div class="sub-section">
+        <h2>Get in Touch</h2>
+        <div class="row  mt-sm-5">
+          <div class="col-md-6 col-sm-12 contact-form">
+            <form action="MAILTO:dragrisystem@gmail.com" method="POST" enctype="text/plain">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Micale Clark">
+              </div>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="message">Message or Query</label>
+                <textarea class="form-control" id="message" rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn btncolorgradient	">Submit</button>
+            </form>
+          </div>
+          <div class="col-md-6 col-sm-12 contact-details">
+            <div>
+              <p><strong>Contact Details</strong></p>
+              <p>For further queries please reach us at <a
+                  href="mailto: dragrisystem@gmail.com">dragrisystem@gmail.com</a></p>
+              <p>Hope Dragri made a meaningful impact on your agricultural journey through smart drone technology. Thank you!</p>
+              <p>-Team DrAgri- </p>
+              <img class="footer_Logo" src="Images/logo/DrAgri2.1.jpg" width="100%" height="150%" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Scripts -->
+  <script src="lib/jquery/jquery-3.5.1.slim.min.js"></script>
+  <script src="lib/fontawesome/js/all.min.js"></script>
+  <script src="lib/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
